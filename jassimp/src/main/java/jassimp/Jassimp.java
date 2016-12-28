@@ -251,6 +251,6 @@ public final class Jassimp {
     
     
     static {
-        System.loadLibrary("jassimp");
+        System.loadLibrary("64".equals(System.getProperty("sun.arch.data.model")) ? "jassimp64" : "jassimp");
     }
 }
